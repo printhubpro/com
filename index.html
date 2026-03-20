@@ -89,7 +89,7 @@
         <div id="cat-all" class="nav-item active-cat" onclick="render('all')">All Products</div>
         <div id="cat-cloths" class="nav-item" onclick="render('cloths')">👕 Premium Cloths</div>
         <div id="cat-id" class="nav-item" onclick="render('id')">💳 Corporate ID Cards</div>
-        <div id="cat-choco" class="nav-item" onclick="render('choco')">🍫 Luxury Chocolates</div>
+        <div id="cat-choco" class="nav-item" onclick="render('choco')">🍫 Photo wrapper Chocolates</div>
         <div id="cat-return" class="nav-item" onclick="render('return')">🎁 Return Gifts</div>
         <div id="cat-gift" class="nav-item" onclick="render('gift')">✨Gifts</div>
     </div>
@@ -133,7 +133,7 @@
         const colorNames = { '#000000': 'Black', '#FFFFFF': 'White', '#FF0000': 'Red', '#1e293b': 'Navy' };
         
         const products = [
-            { id: 101, name: 'Premium Polo', cat: 'cloths', price: 199, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['https://placehold.co/400x400?text=Polo+1', 'https://placehold.co/400x400?text=Polo+2'] },
+            { id: 101, name: 'Premium Polo', cat: 'cloths', price: 199, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['Matty-190GSM.png', 'https://placehold.co/400x400?text=Polo+2'] },
             { id: 102, name: 'Cotton Hoodie', cat: 'cloths', price: 199, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['https://placehold.co/400x400?text=Hoodie+1', 'https://placehold.co/400x400?text=Hoodie+2'] },
             { id: 103, name: 'Cotton Hoodie', cat: 'cloths', price: 399, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['https://placehold.co/400x400?text=Hoodie+1', 'https://placehold.co/400x400?text=Hoodie+2'] },
              { id: 104, name: 'Cotton Hoodie', cat: 'cloths', price: 399, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['https://placehold.co/400x400?text=Hoodie+1', 'https://placehold.co/400x400?text=Hoodie+2'] },
@@ -141,22 +141,26 @@
              { id: 106, name: 'Cotton Hoodie', cat: 'cloths', price: 399, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['https://placehold.co/400x400?text=Hoodie+1', 'https://placehold.co/400x400?text=Hoodie+2'] },
              { id: 107, name: 'Cotton Hoodie', cat: 'cloths', price: 399, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['https://placehold.co/400x400?text=Hoodie+1', 'https://placehold.co/400x400?text=Hoodie+2'] },
            
-            { id: 301, name: 'Standard PVC ID', cat: 'id', price: 150, colors: [], imgs: ['https://placehold.co/400x400?text=ID+Front', 'https://placehold.co/400x400?text=ID+Back'] },
-            { id: 301, name: 'Standard PVC ID', cat: 'id', price: 150, colors: [], imgs: ['https://placehold.co/400x400?text=ID+Front', 'https://placehold.co/400x400?text=ID+Back'] },
+            { id: 301, name: 'School ID Card's', cat: 'id', price: 150, colors: [], imgs: ['https://placehold.co/400x400?text=ID+Front', 'https://placehold.co/400x400?text=ID+Back'] },
+            { id: 301, name: 'Employee ID's, cat: 'id', price: 150, colors: [], imgs: ['https://placehold.co/400x400?text=ID+Front', 'https://placehold.co/400x400?text=ID+Back'] },
             
-            { id: 401, name: 'Dark Truffle Box', cat: 'choco', price: 599, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
-            { id: 402, name: 'Dark Truffle Box', cat: 'choco', price: 599, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
-            { id: 403, name: 'Dark Truffle Box', cat: 'choco', price: 599, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
-            { id: 404, name: 'Dark Truffle Box', cat: 'choco', price: 599, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
+            { id: 401, name: 'CoffeBite/coconut Bite', cat: 'choco', price: 5rs/piece, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
+            { id: 402, name: 'England chocolates', cat: 'choco', price: 8rs/piece, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
+            { id: 403, name: 'Dairy Milk/KitKat/Five-star ', cat: 'choco', price: 15rs/piece, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
+            { id: 404, name: 'Dairy Milk/KitKat', cat: 'choco', price:24rs/piece, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
             
-            { id: 201, name: 'Magic Photo Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
-            { id: 202, name: 'Magic Photo Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
-            { id: 203, name: 'Magic Photo Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
-            { id: 204, name: 'Magic Photo Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
-            { id: 205, name: 'Magic Photo Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
-            { id: 206, name: 'Magic Photo Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 201, name: 'White AAA Photo Mug', cat: 'gift', price: 199, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 202, name: 'White heart Handle Mug', cat: 'gift', price: 249, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 203, name: '3Tone Normal Handle Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 204, name: 'Glitter Magic Mug', cat: 'gift', price: 369, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 205, name: 'Magic Normal Handle Mug', cat: 'gift', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 206, name: 'Beer Photo Mug', cat: 'gift', price: 4n49, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
 
-            { id: 206, name: 'Magic Photo Mug', cat: 'return', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 501, name: 'Magic Photo Mug', cat: 'return', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 502, name: 'Magic Photo Mug', cat: 'return', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 503, name: 'Magic Photo Mug', cat: 'return', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 504, name: 'Magic Photo Mug', cat: 'return', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+            { id: 505, name: 'Magic Photo Mug', cat: 'return', price: 349, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
         ];
 
         let cart = JSON.parse(localStorage.getItem('myCart')) || [];
