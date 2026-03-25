@@ -106,7 +106,7 @@
 		<div id="cat-Corp" class="nav-item" onclick="render('Corp')">🎁 Corporate Gifting</div>
         <div id="cat-id" class="nav-item" onclick="render('id')">💳 ID Cards</div>
         <div id="cat-choco" class="nav-item" onclick="render('choco')">🍫 Photo wrapper Chocolates</div>
-        <div id="cat-return" class="nav-item" onclick="render('return')">🎁 Return Gifts</div>
+        <div id="cat-return" class="nav-item" onclick="render('promo')">Promotional Items</div>
         <div id="cat-gift" class="nav-item" onclick="render('gift')">✨Gifts</div>
     </div>
 
@@ -168,10 +168,10 @@
     { id: 301, name: 'School ID Cards', cat: 'id', price: 150, colors: [], imgs: ['school-id.png', 'https://placehold.co/400x400?text=ID+Back'] },
     { id: 302, name: 'Employee ID Cards', cat: 'id', price: 250, colors: [], imgs: ['emp-front.png', 'emp-back-id.png'] },
     
-    { id: 401, name: 'CoffeBite/coconut Bite chocolate', cat: 'choco', price: 5, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
-    { id: 402, name: 'England chocolates', cat: 'choco', price: 8, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
-    { id: 403, name: 'Dairy Milk/KitKat/Five-star chocolate ', cat: 'choco', price: 15, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
-    { id: 404, name: 'Dairy Milk/KitKat chocolate', cat: 'choco', price: 24, colors: [], imgs: ['https://placehold.co/400x400?text=Dark+Box', 'https://placehold.co/400x400?text=Dark+Inside'] },
+    { id: 401, name: 'CoffeBite/coconut Bite chocolate', cat: 'choco', price: 5, colors: [], imgs: ['5.jpg', 'https://placehold.co/400x400?text=Dark+Inside'] },
+    { id: 402, name: 'England chocolates', cat: 'choco', price: 8, colors: [], imgs: ['8.jpg', '8-back.jpg'] },
+    { id: 403, name: 'Dairy Milk/KitKat/Five-star chocolate ', cat: 'choco', price: 15, colors: [], imgs: ['15.jpg', 'https://placehold.co/400x400?text=Dark+Inside'] },
+    { id: 404, name: 'Dairy Milk/KitKat chocolate', cat: 'choco', price: 24, colors: [], imgs: ['24rs.jpg', 'https://placehold.co/400x400?text=Dark+Inside'] },
     
     { id: 201, name: 'White AAA Photo Mug', cat: 'gift', price: 199, colors: [], imgs: ['whiteAAA mug.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
     { id: 202, name: 'White heart Handle Mug', cat: 'gift', price: 249, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
@@ -179,16 +179,18 @@
     { id: 204, name: 'Glitter Magic Mug', cat: 'gift', price:349, colors: [], imgs: ['Glitter Magic.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
     { id: 205, name: 'Magic Normal Handle Mug', cat: 'gift', price: 349, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['Magic-mug.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
     { id: 206, name: 'Custom Sipper Water Bottle(600ML)', cat: 'gift', price: 399, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['Aluminum.webp', 'https://placehold.co/400x400?text=Mug+Hot'] },
-    { id: 207, name: 'Cap', cat: 'gift', price: 199, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['cap-1.png', 'cap-crop.jpg'] },
-    { id: 208, name: 'Custom notebook with your photo and name', cat: 'gift', price: 449, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['photo-dairy.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
     { id: 209, name: 'Custom Mouse Pad with photo/Logo', cat: 'gift', price: 149, colors: [], imgs: ['Mpousepad.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
 	{ id: 210, name: 'Money Saving Wooden Piggy Bank with Photo(1Lac)', cat: 'gift', price: 549, colors: [], imgs: ['piggybankfront.png', 'backpiggy.png'] },
     
-    { id: 501, name: 'White heart Handle Mug', cat: 'return', price: 249, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
-    { id: 502, name: 'Custom Steeel bottle with name/Logo(750ML)', cat: 'return', price: 349, colors: [], imgs: ['Steel.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
-    { id: 503, name: 'Glitter Magic Mug', cat: 'return', price: 369, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
-    { id: 504, name: 'Custom temperature bottle with name/Logo ', cat: 'return', price: 499, colors: [], imgs: ['Temp-bottle.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
-    { id: 505, name: 'Personalized Round Metal Keychains', cat: 'return', price: 35, colors: [], imgs: ['key-1.png', 'https://placehold.co/400x400?text=Mug+Hot'] }
+    { id: 501, name: '', cat: 'promo', price: 249, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+    { id: 502, name: 'Custom Steeel bottle with name/Logo(750ML)', cat: 'promo', price: 349, colors: [], imgs: ['Steel.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
+    { id: 503, name: 'Glitter Magic Mug', cat: 'promo', price: 369, colors: [], imgs: ['https://placehold.co/400x400?text=Mug+Cold', 'https://placehold.co/400x400?text=Mug+Hot'] },
+    { id: 504, name: 'Custom temperature bottle with name/Logo ', cat: 'promo', price: 499, colors: [], imgs: ['Temp-bottle.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
+	{ id: 505, name: 'Cap', cat: 'gift', price: 199, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['cap-1.png', 'cap-crop.jpg'] },
+	{ id: 506, name: 'Corporate Custom Pen', cat: 'Corp', price: 35, colors: [], imgs: ['pens1.jpeg', 'https://placehold.co/400x400?text=Hoodie+2'] },
+	{ id: 507, name: 'Corporate Personalized Round Metal Keychains', cat: 'Corp', price: 30, colors: [], imgs: ['key-1.png', 'https://placehold.co/400x400?text=Hoodie+2'] },
+	{ id: 508, name: 'Custom notebook with your photo and name', cat: 'gift', price: 449, colors: ['#000000', '#FFFFFF', '#FF0000', '#1e293b'], imgs: ['photo-dairy.png', 'https://placehold.co/400x400?text=Mug+Hot'] },
+    { id: 509, name: 'Personalized Round Metal Keychains', cat: 'promo', price: 35, colors: [], imgs: ['key-1.png', 'https://placehold.co/400x400?text=Mug+Hot'] }
 ];
 
         let cart = JSON.parse(localStorage.getItem('myCart')) || [];
